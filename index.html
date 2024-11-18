@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breach Search Engine</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.1/papaparse.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Breach Search Engine</h1>
+        <p>Search breach data by Discord ID, name, IP address, or date.</p>
+    </header>
+
+    <main>
+        <!-- Search Form Section -->
+        <section id="search-section">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Enter query (e.g., Discord ID, name, IP)" required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <!-- Results and Pagination Section -->
+        <section id="results-section">
+            <h2>Search Results</h2>
+            <div id="results-container">
+                <!-- Results will be dynamically added here -->
+            </div>
+            <div id="pagination-controls">
+                <!-- Pagination buttons will appear here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Data is for informational purposes only. Use responsibly.</p>
+    </footer>
+</body>
+</html>
